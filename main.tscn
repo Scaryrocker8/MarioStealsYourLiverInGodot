@@ -1,0 +1,133 @@
+[gd_scene load_steps=14 format=3 uid="uid://d0fo43j1a2ka"]
+
+[ext_resource type="Texture2D" uid="uid://boev0qdg7ocet" path="res://assets/marios_head.png" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://djvgjovxb2eve" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="FontFile" uid="uid://8ng3pval66ad" path="res://assets/segoeuithis.ttf" id="2_h2yge"]
+[ext_resource type="AudioStream" uid="uid://drxu60vvwj7wq" path="res://assets/3 days.wav" id="3_h2yge"]
+[ext_resource type="AudioStream" uid="uid://cmbheylxks5kj" path="res://assets/itsnotanoption.wav" id="5_lquwl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
+font = ExtResource("2_h2yge")
+font_size = 22
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1bvp3"]
+bg_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lquwl"]
+bg_color = Color(0.16078432, 0.4745098, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mycd"]
+bg_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4c57u"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.16078432, 0.4745098, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_272bh"]
+bg_color = Color(0.16078432, 0.4745098, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vw27"]
+bg_color = Color(0.98039216, 0.98039216, 0.98039216, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kek77"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.16078432, 0.4745098, 1, 1)
+
+[node name="Main" type="Control" node_paths=PackedStringArray("ok_button", "cancel_button", "mario_audio")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1bvp3")
+ok_button = NodePath("Ok")
+cancel_button = NodePath("Cancel")
+mario_audio = NodePath("MarioAudio")
+mario_sounds = Array[AudioStreamWAV]([ExtResource("3_h2yge"), ExtResource("5_lquwl")])
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.9254902, 0.9137255, 0.84705883, 1)
+
+[node name="MarioHead" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 126.0
+offset_bottom = 144.0
+texture = ExtResource("1_0xm2m")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = -40.5
+offset_right = 235.0
+offset_bottom = -7.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "3 Days until Mario steals your liver"
+label_settings = SubResource("LabelSettings_1bvp3")
+horizontal_alignment = 1
+
+[node name="Ok" type="Button" parent="."]
+layout_mode = 0
+offset_left = 174.0
+offset_top = 88.0
+offset_right = 273.0
+offset_bottom = 119.0
+focus_neighbor_right = NodePath("../Cancel")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lquwl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7mycd")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4c57u")
+text = "ok"
+
+[node name="Cancel" type="Button" parent="."]
+layout_mode = 0
+offset_left = 302.0
+offset_top = 88.0
+offset_right = 401.0
+offset_bottom = 119.0
+focus_neighbor_left = NodePath("../Ok")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_h2yge")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_1bvp3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_272bh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5vw27")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kek77")
+text = "cancel"
+
+[node name="MarioAudio" type="AudioStreamPlayer" parent="."]
+
+[connection signal="pressed" from="Ok" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="Cancel" to="." method="_on_cancel_pressed"]
