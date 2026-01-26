@@ -1,8 +1,11 @@
 extends Control
 class_name Main
 
+# Buttons
 @export var ok_button: Button
 @export var cancel_button: Button
+
+# Sounds
 @export var mario_audio: AudioStreamPlayer
 @export var mario_sounds: Array[AudioStreamWAV]
 
