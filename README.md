@@ -2,7 +2,7 @@
 
 # You have 3 days until Mario steals your liver
 
-Running isn't an option.
+Running is not an option.
 
 You have 3 days to live.
 
