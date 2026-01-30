@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d0fo43j1a2ka"]
+[gd_scene format=3 uid="uid://d0fo43j1a2ka"]
 
 [ext_resource type="Texture2D" uid="uid://boev0qdg7ocet" path="res://assets/marios_head.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://djvgjovxb2eve" path="res://main.gd" id="1_1bvp3"]
@@ -42,7 +42,7 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.16078432, 0.4745098, 1, 1)
 
-[node name="Main" type="Control" node_paths=PackedStringArray("ok_button", "cancel_button", "mario_audio")]
+[node name="Main" type="Control" unique_id=1479466612 node_paths=PackedStringArray("ok_button", "cancel_button", "mario_audio")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -55,7 +55,7 @@ cancel_button = NodePath("Cancel")
 mario_audio = NodePath("MarioAudio")
 mario_sounds = Array[AudioStreamWAV]([ExtResource("3_h2yge"), ExtResource("5_lquwl")])
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="." unique_id=696153915]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -64,7 +64,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.9254902, 0.9137255, 0.84705883, 1)
 
-[node name="MarioHead" type="TextureRect" parent="."]
+[node name="MarioHead" type="TextureRect" parent="." unique_id=1508450824]
 layout_mode = 0
 offset_left = 12.0
 offset_top = 14.0
@@ -72,7 +72,7 @@ offset_right = 126.0
 offset_bottom = 144.0
 texture = ExtResource("1_0xm2m")
 
-[node name="Title" type="Label" parent="."]
+[node name="Title" type="Label" parent="." unique_id=1735530308]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -85,11 +85,11 @@ offset_right = 235.0
 offset_bottom = -7.5
 grow_horizontal = 2
 grow_vertical = 2
-text = "3 Days until Mario steals your liver"
+text = "3 days until Mario steals your liver"
 label_settings = SubResource("LabelSettings_1bvp3")
 horizontal_alignment = 1
 
-[node name="Ok" type="Button" parent="."]
+[node name="Ok" type="Button" parent="." unique_id=530072306]
 layout_mode = 0
 offset_left = 174.0
 offset_top = 88.0
@@ -108,7 +108,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_7mycd")
 theme_override_styles/focus = SubResource("StyleBoxFlat_4c57u")
 text = "ok"
 
-[node name="Cancel" type="Button" parent="."]
+[node name="Cancel" type="Button" parent="." unique_id=280348323]
 layout_mode = 0
 offset_left = 302.0
 offset_top = 88.0
@@ -127,7 +127,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_5vw27")
 theme_override_styles/focus = SubResource("StyleBoxFlat_kek77")
 text = "cancel"
 
-[node name="MarioAudio" type="AudioStreamPlayer" parent="."]
+[node name="MarioAudio" type="AudioStreamPlayer" parent="." unique_id=96110090]
 
 [connection signal="pressed" from="Ok" to="." method="_on_ok_pressed"]
 [connection signal="pressed" from="Cancel" to="." method="_on_cancel_pressed"]
