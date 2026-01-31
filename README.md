@@ -1,4 +1,4 @@
-![title](screenshot0.png)
+![title](preview0.png)
 
 # You have 3 days until Mario steals your liver
 
@@ -8,6 +8,6 @@ You have 3 days to live.
 
 The classic meme recreated in Godot!
 
-![screenshot](screenshot1.png)
+![screenshot](preview1.png)
 
 Created by Jonnie Gieringer
