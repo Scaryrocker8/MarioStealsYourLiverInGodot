@@ -16,7 +16,7 @@ Took away ability to close application.
 
 When pressing ok, application minimizes Mario to your system tray.
 
-In 24 real-time hours after application has started Mario will reappear, saying you now only have 2 days until he steals your liver.
+After 24 real-time hours Mario will pop-up, saying you now only have 2 days until he steals your liver.
 
 Mario will continue counting down every 24 hours until day 0.
 
@@ -25,5 +25,9 @@ After that, I don't know what happens.
 # v1.0.0
 
 First release of Mario Steals You Liver In Godot!
+
+No countdown timer.
+
+Can close application immediately.
 
 Created by Jonnie Gieringer
