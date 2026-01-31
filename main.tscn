@@ -45,7 +45,7 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.16078432, 0.4745098, 1, 1)
 
-[node name="Main" type="Control" unique_id=1479466612 node_paths=PackedStringArray("ok_button", "cancel_button", "mario_audio")]
+[node name="Main" type="Control" unique_id=1479466612 node_paths=PackedStringArray("ok_button", "cancel_button", "mario_audio", "title_label")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -57,6 +57,7 @@ ok_button = NodePath("Ok")
 cancel_button = NodePath("Cancel")
 mario_audio = NodePath("MarioAudio")
 mario_sounds = Array[AudioStreamWAV]([ExtResource("3_h2yge"), ExtResource("5_lquwl"), ExtResource("4_5vw27"), ExtResource("5_kek77"), ExtResource("6_4c57u")])
+title_label = NodePath("Title")
 
 [node name="Background" type="ColorRect" parent="." unique_id=696153915]
 layout_mode = 1
