@@ -2,7 +2,6 @@ extends Control
 class_name Main
 
 const DAY: int = 86400
-const DAY_TEST: int = 15
 
 @export_group("Buttons")
 @export var ok_button: Button
@@ -12,11 +11,6 @@ const DAY_TEST: int = 15
 @export var mario_sounds: Array[AudioStreamWAV]
 @export_group("Label")
 @export var title_label: Label
-
-# #* For testing
-# var wake_time0: int = Time.get_unix_time_from_system() as int + DAY_TEST
-# var wake_time1: int = Time.get_unix_time_from_system() as int + DAY_TEST * 2
-# var wake_time2: int = Time.get_unix_time_from_system() as int + DAY_TEST * 3
 
 var wake_time0: int = Time.get_unix_time_from_system() as int + DAY
 var wake_time1: int = Time.get_unix_time_from_system() as int + DAY * 2
@@ -65,8 +59,6 @@ func _process(_delta: float) -> void:
 		title_label.text = ""
 		await mario_audio.finished
 		get_tree().quit()
-	
-	#print(Time.get_unix_time_from_system() as int)
 
 func _window() -> void:
 	DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_NO_FOCUS, false)
@@ -93,6 +85,5 @@ func _on_cancel_pressed() -> void:
 func _on_ok_pressed() -> void:
 	# Minimize to tray.
 	_minimize()
-
 
 #endregion
