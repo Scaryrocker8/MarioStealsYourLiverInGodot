@@ -8,7 +8,13 @@ You have 3 days to live.
 
 The classic meme recreated and expanded in Godot!
 
-# v1.0.1
+# v1.0.1b
+
+Same as v1.0.1a, but countdown timer is only 5 minutes.
+
+A better version if you want Mario to steal your liver faster.
+
+# v1.0.1a
 
 Added an authentic 3 day countdown until Mario steals your liver.
 
