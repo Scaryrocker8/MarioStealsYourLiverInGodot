@@ -34,6 +34,10 @@ window/size/minimize_disabled=true
 window/size/maximize_disabled=true
 window/vsync/vsync_mode=0
 
+[editor_plugins]
+
+enabled=PackedStringArray()
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

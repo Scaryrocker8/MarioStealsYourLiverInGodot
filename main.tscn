@@ -3,8 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://boev0qdg7ocet" path="res://assets/marios_head.png" id="1_0xm2m"]
 [ext_resource type="Script" uid="uid://djvgjovxb2eve" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="FontFile" uid="uid://8ng3pval66ad" path="res://assets/segoeuithis.ttf" id="2_h2yge"]
-[ext_resource type="AudioStream" uid="uid://drxu60vvwj7wq" path="res://assets/3 days.wav" id="3_h2yge"]
+[ext_resource type="AudioStream" uid="uid://drxu60vvwj7wq" path="res://assets/3_days.wav" id="3_h2yge"]
+[ext_resource type="AudioStream" uid="uid://nwld1fxac0dv" path="res://assets/2_days.wav" id="4_5vw27"]
+[ext_resource type="AudioStream" uid="uid://d33pdicy0wt3b" path="res://assets/1_day.wav" id="5_kek77"]
 [ext_resource type="AudioStream" uid="uid://cmbheylxks5kj" path="res://assets/itsnotanoption.wav" id="5_lquwl"]
+[ext_resource type="AudioStream" uid="uid://drsc2va24wrmn" path="res://assets/distorted_trumpets.wav" id="6_4c57u"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
 font = ExtResource("2_h2yge")
@@ -53,7 +56,7 @@ script = ExtResource("1_1bvp3")
 ok_button = NodePath("Ok")
 cancel_button = NodePath("Cancel")
 mario_audio = NodePath("MarioAudio")
-mario_sounds = Array[AudioStreamWAV]([ExtResource("3_h2yge"), ExtResource("5_lquwl")])
+mario_sounds = Array[AudioStreamWAV]([ExtResource("3_h2yge"), ExtResource("5_lquwl"), ExtResource("4_5vw27"), ExtResource("5_kek77"), ExtResource("6_4c57u")])
 
 [node name="Background" type="ColorRect" parent="." unique_id=696153915]
 layout_mode = 1
