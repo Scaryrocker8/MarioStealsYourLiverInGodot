@@ -8,6 +8,8 @@ You have 3 days to live.
 
 The classic meme recreated and expanded in Godot!
 
+## There are 3 different versions
+
 # v1.0.1b
 
 Same as v1.0.1a, but countdown timer is only 5 minutes.

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d0fo43j1a2ka"]
 
 [ext_resource type="Texture2D" uid="uid://boev0qdg7ocet" path="res://assets/marios_head.png" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://djvgjovxb2eve" path="res://main.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://djvgjovxb2eve" path="res://scenes/main.gd" id="1_1bvp3"]
 [ext_resource type="FontFile" uid="uid://8ng3pval66ad" path="res://assets/segoeuithis.ttf" id="2_h2yge"]
 [ext_resource type="AudioStream" uid="uid://drxu60vvwj7wq" path="res://assets/3_days.wav" id="3_h2yge"]
 [ext_resource type="AudioStream" uid="uid://nwld1fxac0dv" path="res://assets/2_days.wav" id="4_5vw27"]
